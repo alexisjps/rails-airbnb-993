@@ -1,0 +1,14 @@
+<div class="container mt-5">
+    <a href="<%= @flat.id %>/bookings/new"> Réserver maintenant</a>
+    <%= @flat.name %>
+    <%= @flat.description %>
+    <%= @flat.address %>
+    <%= @flat.price %>€
+    <div class="m-5">
+    <div style="width: 100%; height: 600px;"
+        data-controller="map"
+        data-map-markers-value="<%= @markers.to_json %>"
+        data-map-api-key-value="pk.eyJ1IjoiYm9vYnljb2RpZXBpZSIsImEiOiJjbGJmOW14eXEwNDA1M3Byd3ZubGRscjdhIn0.AJ7N7n4KZsg6_npge1oqmg">
+    </div>
+    
+</div>
