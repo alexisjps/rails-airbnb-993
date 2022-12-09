@@ -2,6 +2,7 @@
     <%= simple_form_for [@flat, @booking] do |f| %>
     <%= f.input :startbook_time %>
     <%= f.input :endbook_time %>
+    <%= f.input :picture, as: :file %>
     <%= f.button :submit %>
     <% end %>
 </div>

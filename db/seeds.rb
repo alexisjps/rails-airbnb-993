@@ -13,9 +13,9 @@ Booking.destroy_all
 p 'destroy done'
 
 p 'creating in progress'
-Flat.create(name: "Flat 1", address: "10 avenue de la grande armée paris", description: "Description 1", price: 100, picture: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80")
-Flat.create(name: "Flat 2", address: "12 rue lesueur Paris", description: "Description 2", price: 200, picture: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80")
-Flat.create(name: "Flat 3", address: "14 rue de la paix paris", description: "Description 3", price: 300, picture: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80")
+Flat.create(name: "Flat 1", address: "10 avenue de la grande armée paris", description: "Description 1", price: 100)
+Flat.create(name: "Flat 2", address: "12 rue lesueur Paris", description: "Description 2", price: 200)
+Flat.create(name: "Flat 3", address: "14 rue de la paix paris", description: "Description 3", price: 300)
 p 'flats it"s ok'
 
 User.create(email: "test@test.com", password: '123456')
