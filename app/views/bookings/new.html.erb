@@ -1,7 +1,7 @@
 <div class="container">    
     <%= simple_form_for [@flat, @booking] do |f| %>
-    <%= f.input :startbook_time %>
-    <%= f.input :endbook_time %>
+    <%= f.input :startbook_time, as: :string, input_html: { data: { controller: 'flatpickr' } } %>
+    <%= f.input :endbook_time, as: :string, input_html: { data: { controller: 'flatpickr' } } %>
     <%= f.input :picture, as: :file %>
     <%= f.button :submit %>
     <% end %>
