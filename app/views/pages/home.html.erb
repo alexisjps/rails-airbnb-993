@@ -3,7 +3,7 @@
         <div class="d-flex justify-content: center;">
             <% @flats.each do |flat| %>
             <div class="card m-3" style="width: 30vw;">
-                <img src="<%= flat.image %>" class="card-img-top sizing" alt="<%= flat.name %>">
+                <img src="<%= flat.photo.url %>" class="card-img-top sizing" alt="<%= flat.name %>">
                 <div class="card-body">
                     <h5 class="card-title"><%= flat.name %></h5>
                     <p class="card-text"><%= flat.description %>,  Localisation 📍: <%= flat.address %></p>
